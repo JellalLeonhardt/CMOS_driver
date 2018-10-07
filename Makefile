@@ -1,6 +1,6 @@
 ifneq ($(KERNELRELEASE),)
 MODULE_NAME = cmosd
-$(MODULE_NAME)-objs := cmos_driver.o
+$(MODULE_NAME)-objs := CMOS.o
 obj-m := $(MODULE_NAME).o
 else
 KERNEL_DIR = /lib/modules/`uname -r`/build
